@@ -298,9 +298,13 @@ git status
 ```
 
 ```
-git init
+git add .
 ```
 
 ```
-git init
+git commit -m "Primer commit"
+```
+
+```
+git status
 ```
