@@ -308,3 +308,46 @@ git commit -m "Primer commit"
 ```
 git status
 ```
+
+Con esto ya tenemos listo nuestro repositorio, ahora solo falta subirlo a Heroku
+
+Se entiende que jcerda-webpage es el nombre del proyecto de prueba
+```
+heroku git:remote -a jcerda-webpage
+git push heroku master
+```
+
+## Apuntes Video 71 
+
+Antes de subir los archivos a GitHub, en la página de heroku, en la línea de comando heroku clone, ya que existen archivos en producción, nosotros podemos utilizar ese repositorio que tiene heroku, como base de una aplicación x, en caso de que perdieramos los archivos locales.  Podemos ejecutar este comando y recostruímos el proyecto tal cual como está en heroku.
+
+```
+heroku git:clone -a jcerda-webpage
+```
+
+Por ende, todo lo que existe en heroku, también sirve como un repositorio en GIT.
+
+## Subiendo aplicación a GitHub (WebServer)
+
+1-. Se crea el repositorio en la página de GitHub, luego de crearlo, GitHub nos da los comandos para subir nuestros archivos en los siguientes pasos:
+
+2-. Creamos el archivo README.md
+
+3-. Ya no se debe inicializar el proyecto con Git init porque ya lo hizimos para subirlo a heroku.
+
+4-. Actualizamos los cambios del README.md o cualquier archivo que haya sido actualizado con: 
+
+```
+git add .
+```
+
+5-. luego revisamos el status
+```
+git status
+```
+```
+heroku git:clone -a jcerda-webpage
+```
+```
+heroku git:clone -a jcerda-webpage
+```
